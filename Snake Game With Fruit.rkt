@@ -219,7 +219,7 @@
 ;;prev-dir -> previous direction
 ;;new-dir  -> new direction
 ;;opp-dir  -> opposite direction (of previous direction. eg if prev-dir is "right" then opp-dir is "left")
-;; validate-input makes sure the new-dir does not result in a 360 turn of the snake
+;; validate-input makes sure the new-dir does not result in a 180 turn of the snake
 (define (validate-input prev-dir new-dir opp-dir)
   (if (string=? new-dir opp-dir)
       prev-dir
