@@ -14,9 +14,10 @@
 (define HEIGHT 400)
 (define SCRN-COLOR "navy")
 (define SCREEN (rectangle WIDTH HEIGHT "solid" SCRN-COLOR))
-(define MOVEMENT-SPEED 10)
-(define SNAKE (square MOVEMENT-SPEED "solid" "orange"))
-(define APPLE (square MOVEMENT-SPEED "solid" "red"))
+(define MOVEMENT-SPEED 5)
+(define SNAKE-SIZE 10)
+(define SNAKE (square SNAKE-SIZE "solid" "orange"))
+(define APPLE (square SNAKE-SIZE "solid" "red"))
 
 
 
@@ -265,5 +266,4 @@
              true
              (verify-hit? head (rest lop)))]))
 
-;; Start world with -> (main START-GAME) after runnining the program
-;; Movement: Arrow keys
+(main START-GAME)
