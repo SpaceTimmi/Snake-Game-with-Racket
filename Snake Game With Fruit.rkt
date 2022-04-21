@@ -179,7 +179,7 @@
 
 ;; render-snake takes in Snake and sends the ListOfPostion to display-snake
 (define (render-snake s)
-  (display-snake (snake-lop s) (snake-apple s) (length (snake-lop s))))
+  (display-snake (snake-lop s) (snake-apple s) (- (length (snake-lop s)) 2)))
 
 ;; display-snake takes in ListOfPositions and displays the x and y positions on-screen
 (define (display-snake lop apple len)
